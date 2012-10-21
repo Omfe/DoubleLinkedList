@@ -29,12 +29,14 @@
     
     if (self.headNode == nil) {
         self.headNode = newNode;
+        self.tailNode = newNode;
     } else {
         currentNode = self.headNode;
         while (currentNode.nextNode ) {
             currentNode = currentNode.nextNode;
         }
         currentNode.nextNode = newNode;
+        self.tailNode = newNode;
     }
     self.numberOfNodes++;
     [self.delegate list:self didInsertNode:newNode];
@@ -48,10 +50,16 @@
         currentNode = [self findNodeAtIndex:index - 1];
         deleteNode = currentNode.nextNode;
         currentNode.nextNode = deleteNode.nextNode;
+        deleteNode.nextNode.previousNode = currentNode;
     } else {
         deleteNode = self.headNode;
         self.headNode = deleteNode.nextNode;
     }
+    
+    if (deleteNode == self.tailNode) {
+        self.tailNode = deleteNode.previousNode;
+    }
+    
     self.numberOfNodes--;
     [self.delegate list:self didDeleteNode:deleteNode];
 }
