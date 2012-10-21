@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		428A61A2163399B6001155D6 /* arrow-double.png in Resources */ = {isa = PBXBuildFile; fileRef = 428A61A0163399B6001155D6 /* arrow-double.png */; };
+		428A61A3163399B6001155D6 /* arrow-double@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 428A61A1163399B6001155D6 /* arrow-double@2x.png */; };
+		428A61AA163399C6001155D6 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 428A61A6163399C6001155D6 /* circle.png */; };
+		428A61AB163399C6001155D6 /* circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 428A61A7163399C6001155D6 /* circle@2x.png */; };
+		428A61AE16339A04001155D6 /* DLLArrowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 428A61AC16339A04001155D6 /* DLLArrowView.xib */; };
+		428A61AF16339A04001155D6 /* DLLCircleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 428A61AD16339A04001155D6 /* DLLCircleView.xib */; };
 		997E4E42163390AB0069417D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997E4E41163390AB0069417D /* UIKit.framework */; };
 		997E4E44163390AB0069417D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997E4E43163390AB0069417D /* Foundation.framework */; };
 		997E4E46163390AB0069417D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 997E4E45163390AB0069417D /* CoreGraphics.framework */; };
@@ -23,6 +29,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		428A61A0163399B6001155D6 /* arrow-double.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-double.png"; sourceTree = "<group>"; };
+		428A61A1163399B6001155D6 /* arrow-double@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-double@2x.png"; sourceTree = "<group>"; };
+		428A61A6163399C6001155D6 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		428A61A7163399C6001155D6 /* circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle@2x.png"; sourceTree = "<group>"; };
+		428A61AC16339A04001155D6 /* DLLArrowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLLArrowView.xib; sourceTree = "<group>"; };
+		428A61AD16339A04001155D6 /* DLLCircleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DLLCircleView.xib; sourceTree = "<group>"; };
 		997E4E3D163390AB0069417D /* DoubleLinkedList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubleLinkedList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		997E4E41163390AB0069417D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		997E4E43163390AB0069417D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,6 +71,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		428A619E16339982001155D6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				428A61A6163399C6001155D6 /* circle.png */,
+				428A61A7163399C6001155D6 /* circle@2x.png */,
+				428A61A0163399B6001155D6 /* arrow-double.png */,
+				428A61A1163399B6001155D6 /* arrow-double@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		997E4E32163390AA0069417D = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +121,9 @@
 				997E4E691633932B0069417D /* DLLNode.m */,
 				997E4E6C163393560069417D /* DLLList.h */,
 				997E4E6D163393560069417D /* DLLList.m */,
+				428A61AC16339A04001155D6 /* DLLArrowView.xib */,
+				428A61AD16339A04001155D6 /* DLLCircleView.xib */,
+				428A619E16339982001155D6 /* Images */,
 				997E4E48163390AB0069417D /* Supporting Files */,
 			);
 			path = DoubleLinkedList;
@@ -174,6 +200,12 @@
 				997E4E56163390AB0069417D /* Default@2x.png in Resources */,
 				997E4E58163390AB0069417D /* Default-568h@2x.png in Resources */,
 				997E4E5E163390AB0069417D /* DLLViewController.xib in Resources */,
+				428A61A2163399B6001155D6 /* arrow-double.png in Resources */,
+				428A61A3163399B6001155D6 /* arrow-double@2x.png in Resources */,
+				428A61AA163399C6001155D6 /* circle.png in Resources */,
+				428A61AB163399C6001155D6 /* circle@2x.png in Resources */,
+				428A61AE16339A04001155D6 /* DLLArrowView.xib in Resources */,
+				428A61AF16339A04001155D6 /* DLLCircleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
