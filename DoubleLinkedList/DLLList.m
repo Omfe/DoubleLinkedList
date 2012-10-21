@@ -36,6 +36,7 @@
             currentNode = currentNode.nextNode;
         }
         currentNode.nextNode = newNode;
+        newNode.previousNode = currentNode;
         self.tailNode = newNode;
     }
     self.numberOfNodes++;
@@ -68,15 +69,14 @@
 {
     DLLNode *currentNode;
     
-    if (index >= self.numberOfNodes/2) {
+    if (index > self.numberOfNodes/2) {
         currentNode = self.tailNode;
-        for (NSInteger i = self.numberOfNodes; i >= index ; i--) {
+        for (NSInteger i = self.numberOfNodes-1; i >= index ; i--) {
             if (i == index) {
                 return currentNode;
             }
             currentNode = currentNode.previousNode;
         }
-        return nil;
     } else {
         currentNode = self.headNode;
         for (NSInteger i = 0; i <= index ; i++) {
@@ -85,8 +85,8 @@
             }
             currentNode = currentNode.nextNode;
         }
-        return nil;
     }
+    return nil;
 }
 
 - (NSString *)iterateListString
