@@ -81,7 +81,7 @@
     }
 }
 
-- (NSString *) iterateListString
+- (NSString *)iterateListString
 {
     DLLNode *currentNode;
     NSMutableString *iteratedListString;
