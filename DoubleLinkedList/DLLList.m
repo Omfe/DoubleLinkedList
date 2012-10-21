@@ -70,7 +70,7 @@
     return nil;
 }
 
-- (NSString *) iterateListString
+- (NSString *)iterateListString
 {
     DLLNode *currentNode;
     NSMutableString *iteratedListString;
