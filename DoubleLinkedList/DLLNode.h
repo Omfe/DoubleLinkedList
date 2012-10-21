@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) NSString *value;
 @property (strong, nonatomic) DLLNode *nextNode;
+@property (strong, nonatomic) DLLNode *previousNode;
 
 - (id)initWithValue:(NSString *)value;
 - (void)flashBackground;
