@@ -67,18 +67,26 @@
 - (DLLNode *)findNodeAtIndex:(NSInteger)index
 {
     DLLNode *currentNode;
-//    if (index >= self.numberOfNodes/2) {
-//        currentNode = [self.numberOfNodes];
-//    }
     
-    currentNode = self.headNode;
-    for (NSInteger i = 0; i <= index ; i++) {
-        if (i == index) {
-            return currentNode;
+    if (index >= self.numberOfNodes/2) {
+        currentNode = self.tailNode;
+        for (NSInteger i = self.numberOfNodes; i >= index ; i--) {
+            if (i == index) {
+                return currentNode;
+            }
+            currentNode = currentNode.previousNode;
         }
-        currentNode = currentNode.nextNode;
+        return nil;
+    } else {
+        currentNode = self.headNode;
+        for (NSInteger i = 0; i <= index ; i++) {
+            if (i == index) {
+                return currentNode;
+            }
+            currentNode = currentNode.nextNode;
+        }
+        return nil;
     }
-    return nil;
 }
 
 - (NSString *)iterateListString
