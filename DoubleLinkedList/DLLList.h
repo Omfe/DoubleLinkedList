@@ -21,6 +21,7 @@
 @interface DLLList : NSObject
 
 @property (strong, nonatomic) DLLNode *headNode;
+@property (strong, nonatomic) DLLNode *tailNode;
 @property (assign, nonatomic) NSInteger numberOfNodes;
 @property (assign, nonatomic) id<DLLListDelegate> delegate;
 

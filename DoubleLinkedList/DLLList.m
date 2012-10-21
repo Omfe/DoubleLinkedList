@@ -59,6 +59,9 @@
 - (DLLNode *)findNodeAtIndex:(NSInteger)index
 {
     DLLNode *currentNode;
+//    if (index >= self.numberOfNodes/2) {
+//        currentNode = [self.numberOfNodes];
+//    }
     
     currentNode = self.headNode;
     for (NSInteger i = 0; i <= index ; i++) {
